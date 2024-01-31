@@ -13,10 +13,10 @@ export class Postagem {
        
         this._id = id;
         this._idPerfil = idPerfil;
+        this._data = data;
         this._texto = texto;
         this._curtidas = curtidas;
         this._descurtidas = descurtidas;
-        this._data = data;
     }
 
     public curtir() : void {

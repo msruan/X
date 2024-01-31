@@ -11,7 +11,7 @@ export class RepositorioDePerfisArray implements IRepositorioDePerfis {
         this._perfis = perfis;
     }
 
-    //@throws NullOrUndefinedError
+    //@throws NullOrUndefinedValueError
     public incluir(perfil: Perfil): void {
 
         validarNullEUndefined(perfil);

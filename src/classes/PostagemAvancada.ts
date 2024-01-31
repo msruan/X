@@ -1,5 +1,5 @@
 import {v4 as UUID} from 'uuid';
-import { Postagem } from "./classes/Postagem";
+import { Postagem } from "./Postagem";
 
 export class PostagemAvancada extends Postagem {
 
@@ -22,7 +22,7 @@ export class PostagemAvancada extends Postagem {
     }
 
     public existeHashtag(hashtag : string) : boolean {
-        return hashtag in this._hashtags;
+        return this._hashtags.includes(hashtag);
     }
 
     public get viewsRestantes() : number {
